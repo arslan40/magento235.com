@@ -14,4 +14,8 @@ class Product
         // echo "</pre>";
      return "This is a After Pluginssssssssssss".$result;
     } 
+    public function beforeGetName( \Magento\Catalog\Model\Product $subject, $result)
+    {
+     return "This is a Before Pluginssssssssssss".$result;
+    } 
 }
